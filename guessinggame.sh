@@ -1,4 +1,4 @@
-ans=$(expr $(ls -l | egrep -v "^d" | wc -l ) - 1)
+ans=$(expr $(ls -al | wc -l ) - 1)
 function checker {
 	echo "Please guess the number of files in this directory:"
 	read val
